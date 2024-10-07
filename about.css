@@ -1,0 +1,131 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.navdiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.fit h1 {
+    margin: 0;
+}
+
+.ul-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.ul-nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.ul-nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+button {
+    background-color: #ff9800;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.hero {
+    background: url('654935.webp') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero h2 {
+    margin: 0;
+    font-size: 45px;
+    color: #333;
+}
+
+.hero p {
+    font-size: 25px;
+    color:#0a0a0a
+}
+
+.about, .activities {
+    padding: 20px;
+    text-align: center;
+}
+
+.about img, .activities img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+
+.activities {
+    background-color: #f4f4f4;
+}
+
+.activity {
+    display: inline-block;
+    width: 30%;
+    margin: 10px 1%;
+    vertical-align: top;
+}
+
+.activity img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.activity h3 {
+    margin: 10px 0 5px;
+    font-size: 22px;
+}
+
+.activity p {
+    font-size: 16px;
+    color: #555;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.Subscribe {
+    margin: 0;
+}
+
+.Copyright {
+    margin: 5px 0 0;
+}
+
+#image{
+    height: 550px;
+    width: 2000px;
+}

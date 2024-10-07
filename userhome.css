@@ -1,0 +1,151 @@
+.nav
+{
+    
+    background-color: rgb(32, 45, 70);
+    width:100%;
+    padding-right: 15px;
+    padding-left: 15px;
+
+}
+.navdiv{
+    display: flex;
+    align-items: center;
+    
+}
+h1{
+    font-size: 40px;
+    padding-left: 40px;
+    color: aliceblue;
+    /* margin-left: 50px; */
+}
+
+
+li
+{
+    list-style: none;
+    display: inline-block;
+
+}
+li a 
+{
+ color:aliceblue;
+ font-size: 30px;
+ font-weight: 600;
+ /* margin-right: 10px; */
+ text-decoration: none;
+ /* 
+  */
+  margin-right: 40px;
+  padding-right: 40px;
+}
+button
+{
+    background-color: rgb(127, 190, 219);
+    color: aliceblue;
+    border-radius: 10px;
+    width: 150px;
+    height:50px;
+    font-size: 20px;
+    /* margin-right: 5px; */
+    text-decoration: none;
+    margin-left:10px
+    
+
+}
+
+button:hover{
+    background-color:rgb(209, 185, 47);
+    text-decoration:none;
+}
+a button
+{
+   color: black;
+   font-weight: 600;
+   text-decoration: none;
+}
+
+.ul-nav
+{
+    padding-left: 700px;
+}
+.img1
+{
+ 
+ width: 100%;
+}
+h2{
+    color: black;
+    text-decoration: none;
+}
+.img2
+{
+ float: right;
+ padding-left: 450px;
+ margin: 20px;
+
+}
+.paragraph
+{
+    width:100%;
+    background-color:rgb(212, 208, 208);
+    display: flex;
+    
+    
+}
+.div1
+{
+    padding-left:80px;
+    padding-right:450px;
+    /* padding-bottom: 20px; */
+}
+h2{
+    text-align: center;
+    color: aliceblue;
+    padding-top: 30px;
+   
+
+}
+.divh2
+{
+    width: 100%;
+    background-color: rgb(32, 45, 70);
+   
+}
+.footer
+{
+    background-color: rgb(32, 45, 70);
+    width: 100%;
+    
+}
+.Subscribe
+{
+color: aliceblue;
+text-align: center;
+padding-top: 20px;
+}
+
+.Copyright
+{
+    color: aliceblue;
+    text-align: center;
+    padding-top: 20px; 
+    padding-bottom: 20px;
+}
+.p1,.p2
+{
+color: black;
+
+}
+h3
+{
+    font-size: 30px;
+    color: rgb(22, 22, 27);
+    margin-bottom:10px;
+}
+.contact{
+    color: aliceblue;
+    text-align: center;
+    padding-top: 20px; 
+    padding-bottom: 20px;
+}
+

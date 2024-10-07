@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./styles.css">
+    <!-- Include Chart.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Include Chart.js Data Labels Plugin -->
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+</head>
+
+<body>
+
+    <div class="sidebar">
+        <h2>Admin Menu</h2>
+        <ul>
+            <li><a href="userhome.html">Home</a></li>
+            <li><a href="admin-dashboard.html">User Details</a></li>
+            <li><a href="regitaration.html">Logout</a></li>
+            <li><a href="alert .html">Alert</a></li>
+           
+        </ul>
+    </div>
+
+    <div class="dash">
+    <h2>Dashboard</h2>
+    <div class="dashboard">
+        <div class="card">
+            <h3>Total Users</h3>
+            <p id="total-users">0</p>
+        </div>
+
+        <!-- Chart.js Canvas -->
+        <div class="card">
+            <h3>Activity Distribution</h3>
+            <canvas id="activity-chart"></canvas>
+        </div>
+    </div>
+    </div>
+
+
+    <script src="./responsivedash.js"></script>
+</body>
+
+</html>

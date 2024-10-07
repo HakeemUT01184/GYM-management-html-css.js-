@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit User</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="dash">
+        <h1>FIT or FIGHT</h1>
+        <h2>Admin Dashboard</h2>
+    <form id="editUserForm">
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        
+        <label for="mobilenumber">Mobile Number:</label>
+        <input type="tel" id="mobilenumber" name="mobilenumber" required>
+        
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" required>
+        
+        <label for="emergencycontact">Emergency Contact:</label>
+        <input type="tel" id="emergencycontact" name="emergencycontact" required>
+        
+        <label for="nicnumber">NIC Number:</label>
+        <input type="text" id="nicnumber" name="nicnumber" required>
+        
+        <fieldset>
+            <legend>Select Activities:</legend>
+            <label><input type="checkbox" name="activity" value="running"> Running</label>
+            <label><input type="checkbox" name="activity" value="cycling"> Cycling</label>
+            <label><input type="checkbox" name="activity" value="aerobics"> Aerobics</label>
+            <label><input type="checkbox" name="activity" value="lifting"> Lifting</label>
+            <label><input type="checkbox" name="activity" value="bodybuilding"> Bodybuilding</label>
+            <label><input type="checkbox" name="activity" value="strengthtraining"> Strength Training</label>
+        </fieldset>
+        
+        <button type="submit">Save Changes</button>
+    </form>
+    <div id="message"></div>
+</div>
+    <script src="edit-user.js"></script>
+</body>
+</html>

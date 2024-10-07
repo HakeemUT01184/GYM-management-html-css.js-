@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Details and Alerts</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    
+    <div class="dash">
+        <div class="sidebar">
+            <h2>Admin Menu</h2>
+            <ul>
+                <li><a href="userhome.html">Home</a></li>
+                <li><a href="admin-dashboard.html">User Details</a></li>
+                <li><a href="regitaration.html">Logout</a></li>
+                <li><a href="responsivedash.html">Dashboard</a></li>
+                
+            </ul>
+        </div>
+    <h2>User Details and Alerts</h2>
+
+    <!-- Search Bar -->
+    <div class="search-bar">
+        <label for="search-nic">Search by NIC Number:</label>
+        <input type="text" id="search-nic" placeholder="Enter NIC number">
+        <button id="search-button">Search</button>
+    </div>
+
+    <!-- Display user details -->
+    <div id="userDetails" class="card1"></div>
+
+    <!-- Form to input message -->
+    <div id="alert-section" class="card1" style="display:none;">
+        <h3>Send Alert</h3>
+        <label for="message-input">Message:</label>
+        <textarea id="message-input" placeholder="Enter your message"></textarea>
+        <br>
+        <button id="send-alert">Send Alert</button>
+    </div>
+    </div>
+    <script>
+        window.onload = function() {
+            const users = JSON.parse(localStorage.getItem('users')) || [];
+
+            // Search user by NIC number
+            document.getElementById('search-button').addEventListener('click', () => {
+                const nicInput = document.getElementById('search-nic').value.trim();
+                const user = users.find(user => user.nicnumber === nicInput);
+
+                if (user) {
+                    // Display user details
+                    document.getElementById('userDetails').innerHTML = `
+                        <p>Full Name: ${user.fullname}</p>
+                        <p>Mobile Number: ${user.mobilenumber}</p>
+                        <p>Address: ${user.address}</p>
+                        <p>Emergency Contact: ${user.emergencycontact}</p>
+                        <p>NIC Number: ${user.nicnumber}</p>
+                        <p>Activities: ${user.activities.join(', ')}</p>
+                    `;
+
+                    // Display the alert section
+                    document.getElementById('alert-section').style.display = 'block';
+
+                    // Set up send alert functionality
+                    document.getElementById('send-alert').addEventListener('click', () => {
+                        const messageInput = document.getElementById('message-input').value.trim();
+                        if (messageInput) {
+                            alert(`Alert for ${user.fullname} (NIC: ${user.nicnumber}): ${messageInput}`);
+                        } else {
+                            alert('Please enter a message before sending.');
+                        }
+                    });
+                } else {
+                    // Show error if user not found
+                    document.getElementById('userDetails').innerHTML = '<p>User not found.</p>';
+                    document.getElementById('alert-section').style.display = 'none';
+                }
+            });
+        };
+    </script>
+</body>
+
+</html>
+
